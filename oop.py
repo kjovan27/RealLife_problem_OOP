@@ -13,7 +13,7 @@ class Computer(object):
     pcCount = 0
     
     #initialization
-    def _init_(self, RAM, processor_speed, hardDisk):
+    def __init__(self, RAM, processor_speed, hardDisk):
         self.RAM = RAM
         #Data hiding(making variable processor_speed private)
         self.__processor_speed = processor_speed
@@ -37,7 +37,7 @@ pc3 = Computer('8Gb', '2.7Ghz', '2Tb')
 
 pc1.display_specifications()
 pc2.display_specifications()
-pc.display_specifications()
+pc3.display_specifications()
 
 print ("Total PCs %d" %Computer.pcCount)
         
